@@ -1,0 +1,134 @@
+/* common styles */
+* {
+  margin: 0;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+p {
+  color: #3A3A3A;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.primary-button {
+  border: none;
+  padding: 10px 24px;
+  border-radius: 41px;
+  background: #E02C6D;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 700;
+
+}
+/* header styles */
+
+header {
+  width: 83%;
+  margin: 0px auto;
+  padding: 80px 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h3 {
+  color: #3A3A3A;
+  font-size: 1.5rem;
+  font-weight: 700;
+  }
+
+nav ul {
+  display: flex;
+  gap: 34px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3A3A3A;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.greetings  {
+  width: 48%; 
+}
+
+.greetings h1 {
+  color: #3A3A3A;
+  font-size: 3.15rem;
+  font-weight: 700;
+}
+
+.greetings p {
+  margin: 16px 0px;
+}
+
+.greetings button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.camera-image {
+  display: flex;
+  background-image: url('./images/Circle design.svg');
+  background-size: 99%;
+  background-repeat: no-repeat;
+}
+
+.camera-image img {
+  width: 100%;
+  padding: 30px 20px;
+}
+
+
+/* responsive styles */
+
+/* smaller devices */
+
+@media screen and (max-width:576px){
+  nav, nav ul, nav h3{
+    text-align: center;
+    flex-direction: column;
+  }
+
+
+  header, .greetings {
+    width: 98%;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+  }
+
+  .primary-button {
+    margin: 0 auto;
+  }
+
+  .camera-image {
+    width: 70%;
+  }
+
+  .camera-image img {
+    padding: 20px 0px;
+  }
+}
+
