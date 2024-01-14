@@ -198,6 +198,41 @@ hr {
   margin-top: 50px;
 }
 
+/* feature section styles */
+
+.feature {
+  width: 75%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature div {
+  width: 50%;
+}
+
+.feature div > img {
+  width: 100%;
+}
+
+.feature div > h2 {
+  color: #0A0826;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.feature div > p {
+  margin: 16px 0px;
+}
+
+.feature div > button {
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 
 
 /* responsive styles */
@@ -211,11 +246,11 @@ hr {
   }
 
 
-  header, .greetings, .sponsor div, .collection {
+  header, .greetings, .sponsor div, .collection, .feature, .feature div {
     width: 98%;
   }
 
-  h1, p {
+  h1, p, h2 {
     text-align: center;
   }
 
@@ -252,6 +287,18 @@ hr {
 
   .pic-container {
     grid-template-columns: repeat(1,1fr);
+  }
+
+  /* feature section */
+
+  .feature {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .feature div {
+    width: 90%;
+    margin-top: 30px;
   }
 }
 
