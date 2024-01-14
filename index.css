@@ -96,6 +96,25 @@ nav ul li a {
 }
 
 
+/* main section */
+
+/* sponsor section */
+
+.sponsor div {
+  width: 77%;
+  margin: 0px auto;
+}
+
+hr {
+  border: 1px solid linear-gradient(90deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+}
+
+.sponsor-image {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 62px;
+}
+
 /* responsive styles */
 
 /* smaller devices */
@@ -107,7 +126,7 @@ nav ul li a {
   }
 
 
-  header, .greetings {
+  header, .greetings, .sponsor div {
     width: 98%;
   }
 
@@ -129,6 +148,19 @@ nav ul li a {
 
   .camera-image img {
     padding: 20px 0px;
+  }
+
+  /* sponsor section */
+
+  hr {
+    border: none;
+  }
+
+  .sponsor-image {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 0px;
   }
 }
 
