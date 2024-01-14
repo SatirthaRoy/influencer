@@ -212,10 +212,6 @@ hr {
   width: 50%;
 }
 
-.feature div > img {
-  width: 100%;
-}
-
 .feature div > h2 {
   color: #0A0826;
   font-size: 2rem;
@@ -227,19 +223,50 @@ hr {
 }
 
 .feature div > button {
+  white-space: nowrap;
   border-radius: 0px;
+  justify-content: space-between;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
+/* footer section */
+
+footer {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0A0826;
+  margin-top: 100px;
+}
+
+footer p, footer h2 {
+  color: white;
+  text-align: center;
+  font-family: Manrope;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 17px;
+}
 
 
 /* responsive styles */
 
 /* smaller devices */
 
-@media screen and (max-width:576px){
+@media screen and (max-width:650px){
   nav, nav ul, nav h3{
     text-align: center;
     flex-direction: column;
@@ -300,5 +327,55 @@ hr {
     width: 90%;
     margin-top: 30px;
   }
+
+  .feature div img {
+    width: 100%;
+  }
+}
+
+/* for medium size devices */
+
+@media screen and (min-width: 650px) and (max-width: 1200px) {
+  header, .greetings, .sponsor div, .collection, .feature, .feature div {
+    width: 98%;
+  }
+
+  h1, p, h2 {
+    text-align: center;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+  }
+
+  .primary-button {
+    margin: 0 auto;
+  }
+
+  .pic-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .sponsor-image {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 0px;
+  }
+
+  .feature {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .feature div {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .feature div img {
+    width: 100%;
+  }
+
 }
 
